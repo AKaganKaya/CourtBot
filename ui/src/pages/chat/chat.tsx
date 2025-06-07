@@ -42,6 +42,7 @@ export function Chat() {
         if (event.data.includes("[END]")) {
           return;
         }
+        
 
         setMessages(prev => {
           const lastMessage = prev[prev.length - 1];
