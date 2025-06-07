@@ -18,7 +18,7 @@ def transform_string(input_string):
     components = re.findall(r'[A-Za-z]+|\d+', first_part)
     
     # Capitalize first letter of each component and join them back
-    formatted_first_part = ' '.join([component.capitalize() for component in components])
+    formatted_first_part = '. '.join([component.capitalize() for component in components])
     
     # Rebuild the string with the formatted first part
     transformed_string = formatted_first_part + ", " + ", ".join(parts[1:])
@@ -40,7 +40,7 @@ def find_concatenate_similar(string, string_list):
     previous_string = string_list[index - 1] if index > 0 else ""
     next_string = string_list[index + 1] if index < len(string_list) - 1 else ""
     
-    concatenated_string = previous_string + matched_string + next_string
+    concatenated_string = previous_string + ". " + matched_string + ". " +  next_string
     
     return concatenated_string
 

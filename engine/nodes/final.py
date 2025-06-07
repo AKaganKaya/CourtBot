@@ -7,7 +7,7 @@ from langchain.chains import LLMChain
 class FinalAnswerNode:
     def __init__(self):
         super().__init__()
-        self.llm = ChatOpenAI(model="gpt-4o", streaming=True)  # Enable streaming
+        self.llm = ChatOpenAI(model="gpt-4o")  # Enable streaming
  
     def __call__(self, state: AgentState):
         document_text = "\n".join(state["documents"])
