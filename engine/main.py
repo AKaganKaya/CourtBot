@@ -36,7 +36,7 @@ workflow.add_edge("answer", END)
 app = workflow.compile()
 
 while True:
-    message = input("Enter the query!\n")
+    message = input("Enter the query !\n")
     inputs = {"query": message, "messages": None, "documents": [], "files":[]}
     
     # Invoke the workflow
