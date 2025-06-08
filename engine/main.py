@@ -12,7 +12,7 @@ import chainlit as cl
 
 
 # Initialize OpenAI API
-os.environ["OPENAI_API_KEY"] = "sk-k1IIz-43DMa1e3ZfBFadTKYwKtQR0mSoekmYN7oP5uT3BlbkFJoERIX7i4SmX6zRiDOBaFyMb4olYKj6uJwglIkoFXMA"
+os.environ["OPENAI_API_KEY"] = ""
 faiss_path = "database/faiss.index"
 metadata_path = "database/metadata.pkl"
 index = faiss.read_index(str(faiss_path))
